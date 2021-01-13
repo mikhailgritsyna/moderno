@@ -65,8 +65,7 @@
         }
         a{
             color: #ffffff;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
+            @include f500;
             font-size: 14px;
         }
     }
@@ -87,8 +86,7 @@
     text-align: center;
     color: #ffffff;
     &-title{
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
+        
         font-size: 48px;
         
         margin-bottom: 10px;
@@ -96,8 +94,7 @@
     }
     &-text{
         margin-bottom: 50px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        @include f500;
         font-size: 20px;
         line-height: 30px;
     }
@@ -147,8 +144,7 @@
 .products_inner-btn {
     text-align: center;
     margin-bottom: 60px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    @include f500;
     button{
         outline: none;
         padding: 12px 21px;
@@ -306,3 +302,73 @@
 }
 
 //end slider
+//start advantages
+
+.advantages{
+    background-color: $bg;
+    padding: 110px 0px;
+}
+.advantages_title{
+    color: #fff;
+}
+.advantages_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.advantages_item{
+    max-width: 370px;
+    text-align: center;
+    padding: 0px 15px;
+    
+    &:hover{
+        .advantages_item-img{
+            transition: all .3s;
+            background-color: $green;
+            g{
+                fill: #fff;
+            }
+            
+        }
+        .advantages_item-title{
+            transition: all .3s;
+            color: $green;
+        }
+    }
+    &-img{
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+    }
+    &-title{
+        margin-bottom: 25px;
+        color: #fff;
+        @include f500;
+        font-size: 24px;
+    }
+    &-text{
+        font-size: 15px;
+        color: #a9b7be;
+    }
+}
+.ico-three{
+    svg{
+        width: 86px;
+        padding-top: 10px;
+    }
+}
+.ico-two{
+    svg{
+        width: 70px;
+    }
+}
+.ico-one{
+    svg{
+        width: 50px;
+    }
+}
+//end advantages
