@@ -416,3 +416,41 @@
 
 
 //end author
+
+
+//tutorial
+
+.totorial {
+    padding: 60px 0px 120px;
+}
+
+.totorial_title {
+    padding-bottom: 27px;
+}
+.title {
+}
+.totorial_inner {
+    display: flex;
+    justify-content: space-between;
+}
+.totorial_item {
+    max-width: 370px;
+    width: 100%;
+}
+.totorial_item-img {
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.totorial_item-title {
+    background-color: #f8f8f8;
+    font-size: 24px;
+    text-align: center;
+    @include f700;
+    padding: 30px 10px;
+    color: $bg;
+}
+
+
+//end tutrial
